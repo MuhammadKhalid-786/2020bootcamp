@@ -31,5 +31,5 @@ jobs:
       run: npm-install -g surge
       
       name: deploying using surge
-      run: surge ./http://depositry-github.surge.sh --token $ {{secrets.surge_token}}
+      run: surge ./http://depositry-github.surge.sh --token $ {{Secrets.SURGE_TOKEN}}
 #end of the file 
