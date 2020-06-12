@@ -26,10 +26,10 @@ jobs:
       uses: actions/steup-node@v2-beta
       with:
         node version: 12  
-     name: install surge
-     - run: npm install -g surge
+      name: install_surge
+      run: npm install -g surge
        
-     name: Run surge
-     - run: surge ./ newapp_bootcamp2020.surge.sh  --token ${{secrets.SURGE_TOKEN}}
+      name: Run surge
+      run: surge ./ newapp_bootcamp2020.surge.sh  --token ${{secrets.SURGE_TOKEN}}
        
        
