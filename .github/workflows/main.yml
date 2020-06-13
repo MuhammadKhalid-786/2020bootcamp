@@ -28,7 +28,7 @@ jobs:
            node-version: 10    
         
     - name: surge installation 
-      run: npx Install --global surge
+      run: npm Install --global surge
        
     - name: Run surge
       run: surge ./ newapp_bootcamp2020.surge.sh  --token ${{secrets.SURGE_TOKEN}}
